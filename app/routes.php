@@ -29,3 +29,5 @@ Route::when('register', 'guest');
 
 Route::get('admin', 'AdminController@showIndex');
 Route::when('admin', 'admin');
+
+Route::get('api/forms/list/{lastUpdateTimestamp?}', 'FormsApiController@getList');
